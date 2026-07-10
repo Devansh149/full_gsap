@@ -1,0 +1,28 @@
+body{
+  background-color: black;
+  display: flex;
+}
+
+.container1{
+  border: 1px solid white;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.container2{
+  border: 1px solid white;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.box{
+  height: 300px;
+  width: 300px;
+  background-color: red;
+}
+.circle{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: blue;
+}

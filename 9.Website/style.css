@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 10px 50px;
+}
+/* NAVBAR */
+.nav{
+    width: 100%;
+    height: 10%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.left
+{
+    display: flex;
+    align-items: center;
+}
+.nav i{
+    font-size: 40px;
+    display: inline-block;
+    rotate: 45deg;
+}
+.right
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.right p{
+    font-size: 15px;
+}
+.right button{
+    border-radius: 12px;
+    background-color: transparent;
+    padding: 10px 6px;
+}
+
+/* HERO */
+.hero{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+.hright{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    /* background-color: aquamarine; */
+}
+.hleft{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 25px;
+}
+.hleft h2{
+    font-size: 6vw;
+    font-weight: 300;
+    line-height: 1;
+}
+.hleft p{
+    color: rgb(39, 39, 39);
+    max-width: 450px;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hleft,
+    .hright {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hright img {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .right {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .move {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .move img {
+        height: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .box h3 {
+        position: static;
+        transform: none;
+        text-align: center;
+    }
+
+    .box img {
+        position: static;
+        width: 80%;
+    }
+
+    .bottom {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .flast {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .fone,
+    .ftwo,
+    .fthree {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hleft button{
+    
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 15px 30px;
+}
+
+/* MOVE  */
+.move{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.move img{
+    height: 40px;
+}
+
+/* SERVICCES */
+.services{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 200px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+.heading h2{
+    font-size: 40px;
+    border-radius: 5px;
+    background-color: rgb(175, 251, 99);
+}
+.heading p{
+    width: 30%;
+}
+.boxes{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    border: 1px solid black;
+    border-bottom: 10px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.box h3{
+    transform: translate(-100%,-90%);
+    position: absolute;
+    background-color: white;
+    width: 180px;
+    font-size: 30px;
+}
+.box img{
+    transform: translate(40%,0%);
+    position: absolute;
+    width: 50%;
+}
+.bottom{
+    position: absolute;
+    transform: translate(-116%,100%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bottom p{
+    font-size: 20px;
+}
+.bottom i{
+    transform: rotate(45deg);
+    font-size: 60px;
+}
+
+.footer{
+    height: 100%;
+    width: 100%;
+    
+}
+.ftop{
+    border-radius: 30px;
+    height: 45%;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    margin-bottom: 50px;
+}
+.tleft{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(222, 220, 220);
+}
+.tleft h3{
+    font-size: 40px;
+}
+.tleft p{
+    width: 60%;
+}
+.tleft button{
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 15px 50px;
+    color: white;
+    background-color: black;
+}
+.tright{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(222, 220, 220);
+}
+.tright img{
+    height: 100%;
+    position: absolute;
+    right: 20%;
+}
+.fbot{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.fbot h3{
+    font-size: 40px;
+    background-color: rgb(133, 248, 88);
+}
+.fbot p{
+    width: 32%;
+}
+
+.flast{
+    border-radius: 30px;
+    height: 30%;
+    width: 100%;
+    color: white;
+    display: flex;
+    background-color: black;
+    padding: 30px;
+    gap: 10px;
+}
+.fone{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+    height: 100%;
+    width: 33%;
+    border-right: 1px solid white;
+}
+.ftwo{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+    gap: 20px;
+    height: 100%;
+    width: 33%;
+    
+}
+.fthree{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 33%;
+    
+}
+.fone p ,.ftwo p , .fthree p{
+    width: 60%;
+}
+.fone div ,.ftwo div , .fthree div{
+    display: flex;
+    width: 30%;
+    color: rgb(133,248,88);
+}

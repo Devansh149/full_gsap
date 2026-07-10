@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: cursive;
+}
+.page1{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+}
+.page2{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moving{
+    overflow: hidden;
+    display: flex;
+    background-color: yellowgreen;
+    gap: 3vw;
+    padding: 10px;
+}
+.marque{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    transform: translateX(-100%);
+}
+.marque h1{
+    font-weight: 400;
+}
+.marque i{
+    font-size: 50px;
+}
+.page3{
+    height: 100%;
+    width: 100%;
+    background-color: green;
+}
+.page4{
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+}

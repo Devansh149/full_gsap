@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+    height:100%;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+.nav h1{
+    font-size: 40px;
+}
+.nav i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.side{
+    height: 85%;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.34);
+    position: absolute;
+    top: 0;
+    right: -32%;
+    backdrop-filter: blur(10px);
+    padding: 50px 50px;
+    
+}
+.side i{
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 5%;
+    right: 10%;
+}
+.side h4{
+    font-weight: 450;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+.side h4{
+    position: relative;
+    cursor: pointer;
+}
+
+.side h4::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;     
+    height: 2px;
+    width: 0%;
+    background: black;
+    transition: all .3s ease;
+}
+
+.side h4:hover::after{
+    width: 100%;
+}
